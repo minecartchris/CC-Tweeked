@@ -7,7 +7,7 @@ print("Fluxuated: 32x rpm")
 print("Netherite: 48x rpm")
 local strees = peripheral.find("Create_Stressometer")
 local speedometer = peripheral.find("Create_Speedometer")
-local speed = speedometer.getSpeed()
+local speedon = speedometer.getSpeed()
 local cap = strees.getStressCapacity()
 local inuse = strees.getStress()
 local diff = cap - inuse
@@ -15,7 +15,7 @@ local item = 0
 local itemstres = 0
 print("how many su is the multplyer?")
 item = io.read()
-item = item * speed
+item = item * speedon
 print("How many of theese will you be adding?")
 item = item * io.read()
 itemstres = inuse - item
