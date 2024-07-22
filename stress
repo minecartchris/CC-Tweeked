@@ -1,0 +1,19 @@
+shell.run("clear all")
+strees = peripheral.find("Create_Stressometer")
+ 
+cap = strees.getStressCapacity()
+inuse = strees.getStress()
+diff = cap - inuse
+print("how many su's will your item take at this rpm?")
+item = io.read()
+print("How many of theese will you be adding?")
+item = item * io.read()
+itemstres = inuse - item
+itemstres = itemstres * -1
+if itemstres > cap then
+    print("add less or you will overstress your system")
+else
+    print("your good to go with ", item + inuse - cap, " su's left!") 
+end
+sleep(2)
+shell.run("reboot")
