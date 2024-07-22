@@ -6,8 +6,8 @@ print("Layered: 28x rpm")
 print("Fluxuated: 32x rpm")
 print("Netherite: 48x rpm")
 strees = peripheral.find("Create_Stressometer")
-speed = peripheral.find("Create_Speedometer")
- 
+sped = peripheral.find("Create_Speedometer")
+ speed = sped.getSpeed()
 cap = strees.getStressCapacity()
 inuse = strees.getStress()
 diff = cap - inuse
