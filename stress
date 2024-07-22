@@ -1,4 +1,10 @@
 shell.run("clear all")
+print("su useage for magnets")
+print("Magnetite: 24x rpm")
+print("Redstone: 26 rpm")
+print("Layered: 28x rpm")
+print("Fluxuated: 32x rpm")
+print("Netherite: 48x rpm")
 strees = peripheral.find("Create_Stressometer")
  
 cap = strees.getStressCapacity()
