@@ -23,6 +23,7 @@ itemstres = itemstres * -1
 print(itemstres)
 print(inuse)
 print(item)
+sleep(12)
 if itemstres >= cap then
     print("add less or you will overstress your system")
 else
