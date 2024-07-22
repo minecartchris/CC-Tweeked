@@ -5,12 +5,14 @@ print("Redstone: 26 rpm")
 print("Layered: 28x rpm")
 print("Fluxuated: 32x rpm")
 print("Netherite: 48x rpm")
-strees = peripheral.find("Create_Stressometer")
-sped = peripheral.find("Create_Speedometer")
- speed = sped.getSpeed()
-cap = strees.getStressCapacity()
-inuse = strees.getStress()
-diff = cap - inuse
+local strees = peripheral.find("Create_Stressometer")
+local speedometer = peripheral.find("Create_Speedometer")
+local speed = speedometer.getSpeed()
+local cap = strees.getStressCapacity()
+local inuse = strees.getStress()
+local diff = cap - inuse
+local item = 0
+local itemstres = 0
 print("how many su is the multplyer?")
 item = io.read()
 item = item * speed
