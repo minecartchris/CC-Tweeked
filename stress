@@ -26,7 +26,8 @@ print(item)
 sleep(12)
 if itemstres >= cap then
     print("add less or you will overstress your system")
-else
+end
+if not itemstres >= cap then
     print("your good to go with ", item + inuse - cap, " su's left!") 
 end
 sleep(2)
