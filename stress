@@ -18,7 +18,7 @@ item = io.read()
 item = item * speedon
 print("How many of theese will you be adding?")
 item = item * io.read()
-itemstres = inuse - item
+itemstres = inuse - item + diff
 itemstres = itemstres * -1
 print(itemstres)
 print(inuse)
