@@ -28,7 +28,7 @@ print(cando)
 if cando then
     print("add less or you will overstress your system")
 end
-if not cando then
+if cando == false then
     print("your good to go with ", item + inuse - cap, " su's left!") 
 end
 sleep(2)
