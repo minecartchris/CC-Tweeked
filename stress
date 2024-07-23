@@ -24,6 +24,7 @@ print(itemstres)
 print(inuse)
 print(item)
 cando = itemstres >= cap
+print(cando)
 if cando then
     print("add less or you will overstress your system")
 end
