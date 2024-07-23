@@ -23,11 +23,11 @@ itemstres = itemstres * -1
 print(itemstres)
 print(inuse)
 print(item)
-sleep(12)
-if itemstres >= cap then
+cando = itemstres >= cap
+if cando then
     print("add less or you will overstress your system")
 end
-if not itemstres >= cap then
+if not cando then
     print("your good to go with ", item + inuse - cap, " su's left!") 
 end
 sleep(2)
